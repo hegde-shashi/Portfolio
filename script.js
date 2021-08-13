@@ -1,0 +1,28 @@
+$(document).ready(function(){
+    $('#profileriple').ripples({
+        resolution: 512,
+        dropRadius: 10
+    });
+
+    const bars=document.querySelectorAll('.progress_bar');
+    bars.forEach(function(bar){
+        let percentage = bar.dataset.percent;
+        let tooltip = bar.children[0]
+        tooltip.innerText = percentage + '%';
+        bar.style.width = percentage + '%'
+
+    })
+
+    const storeScroll=()=>{
+        document.documentElement.dataset.scroll = window.scrollY;
+      }
+      
+      window.onscroll=()=>{  // called when the window is scrolled.  
+        storeScroll()
+      }
+      
+      storeScroll()   // first attempt
+});
+
+
+
