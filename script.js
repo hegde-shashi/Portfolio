@@ -12,16 +12,6 @@ $(document).ready(function(){
         bar.style.width = percentage + '%'
 
     })
-
-    const storeScroll=()=>{
-        document.documentElement.dataset.scroll = window.scrollY;
-      }
-      
-      window.onscroll=()=>{  // called when the window is scrolled.  
-        storeScroll()
-      }
-      
-      storeScroll()   // first attempt
 });
 
 
