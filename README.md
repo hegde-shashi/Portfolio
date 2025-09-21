@@ -96,10 +96,6 @@ This portfolio can be deployed to any static hosting service:
 
 Simply run `npm run build` and upload the `dist` folder to your hosting service.
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ---
 
 Built with ❤️ by Shashi Hegde
