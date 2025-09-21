@@ -45,13 +45,14 @@ const Navbar = () => {
   }
 
   return (
+    <div>
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={`navbar ${scrolled ? 'scrolled' : ''}`}
     >
-      <div className="container">
+      <div className="navContainer">
         <motion.div
           className="nav-logo"
           whileHover={{}}
@@ -91,6 +92,7 @@ const Navbar = () => {
         </motion.div>
       </div>
     </motion.nav>
+    </div>
   )
 }
 

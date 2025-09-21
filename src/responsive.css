@@ -103,7 +103,7 @@ body, html {
 /* Better hero section on mobile */
 @media (max-width: 480px) {
   .hero {
-    padding: 1rem 0;
+    padding: 5rem 0;
   }
   
   .hero-content {

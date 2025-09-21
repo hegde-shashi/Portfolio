@@ -1,8 +1,20 @@
+/* ---------- Global Variables ---------- */
+:root {
+  --bg-color: #0a0a0a;
+  --bg-color2: #1a1a1a;
+  --text-color: #ffffff;
+  --accent: #3b82f6;
+  --accent2: #8b5cf6;
+  --accent-hover: #1d4ed8;
+  --max-width: 1200px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -10,8 +22,8 @@ html {
 
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-  background-color: #0a0a0a;
-  color: #ffffff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   line-height: 1.6;
   overflow-x: hidden;
   margin: 0;
@@ -19,59 +31,51 @@ body {
   width: 100%;
 }
 
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
 .App {
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, var(--bg-color) 0%, var(--bg-color2) 100%);
   min-height: 100vh;
   width: 100%;
   display: block;
 }
 
-/* Custom scrollbar */
+/* ---------- Scrollbar ---------- */
 ::-webkit-scrollbar {
   width: 8px;
 }
-
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: var(--bg-color2);
 }
-
 ::-webkit-scrollbar-thumb {
   background: #333;
   border-radius: 4px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
 /* Selection color */
 ::selection {
-  background: #3b82f6;
+  background: var(--accent);
   color: white;
 }
 
-/* Global animations */
-/* .fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-} */
-
-/* .fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-} */
-
-/* Gradient text */
+/* ---------- Gradient Text ---------- */
 .gradient-text {
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+  background: linear-gradient(135deg, var(--accent), var(--accent2), #ec4899);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   animation: gradientShift 3s ease-in-out infinite;
 }
-
 @keyframes gradientShift {
   0%, 100% {
     background-position: 0% 50%;
@@ -86,22 +90,34 @@ body {
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
 }
 
-/* Container */
+/* ---------- Layout Containers ---------- */
 .container {
-  padding: 20px;
-  margin: 0 auto;
   padding: 0 2rem;
+  margin: 0 auto;
   width: 100%;
+  max-width: var(--max-width);
   box-sizing: border-box;
 }
 
-/* Section spacing */
+.navContainer {
+  /* clamp: min 320px, prefers 90% of viewport, max 1200px */
+  width: clamp(320px, 90%, 1200px);
+  /* center the container horizontally */
+  margin: 0 auto;
+  /* paddings for breathing space */
+  /* padding: 0 1rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px; /* match your navbar height */
+}
+
 .section {
-  padding: 5rem 0;
+  padding: 5rem 1.5rem;
   position: relative;
 }
 
-/* Button styles */
+/* ---------- Buttons ---------- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -119,45 +135,49 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
   color: white;
   box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
-
 .btn-primary:hover {
-  /* transform: translateY(-2px); */
   box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+  transform: translateY(-2px);
 }
 
 .btn-secondary {
   background: transparent;
-  color: #3b82f6;
-  border: 2px solid #3b82f6;
+  color: var(--accent);
+  border: 2px solid var(--accent);
 }
-
 .btn-secondary:hover {
-  background: #3b82f6;
+  background: var(--accent);
   color: white;
-  /* transform: translateY(-2px); */
+  transform: translateY(-2px);
 }
 
-/* Card styles */
+/* ---------- Cards ---------- */
 .card {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1rem;
   padding: 2rem;
-  transition: all 0.8s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
-
 .card:hover {
-  transform: scale(1);
+  transform: scale(1.05);
   border-color: rgba(59, 130, 246, 0.3);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* Section titles */
+/* grid layout for projects / skills */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* ---------- Section Titles ---------- */
 .section-title {
   font-size: 3rem;
   font-weight: 700;
@@ -165,95 +185,51 @@ body {
   margin-bottom: 3rem;
   position: relative;
 }
-
 .section-title::after {
   content: '';
   position: absolute;
   bottom: -1rem;
   left: 50%;
-  /* transform: translateX(-50%); */
+  transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
   border-radius: 2px;
 }
 
-/* Responsive design */
+/* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
-  .container {
-    padding: 0 1.5rem;
-  }
+  .container { padding: 0 1.5rem; }
 }
-
 @media (max-width: 768px) {
-  .container {
-    padding: 0 1rem;
-  }
-  
-  .section {
-    padding: 3rem 0;
-  }
-  
-  .section-title {
-    font-size: 2.5rem;
-  }
-  
-  .btn {
-    padding: 0.625rem 1.5rem;
-    font-size: 0.9rem;
-  }
+  .container { padding: 0 1rem; }
+  .section { padding: 3rem 0; }
+  .section-title { font-size: 2.5rem; }
+  .btn { padding: 0.625rem 1.5rem; font-size: 0.9rem; }
 }
-
 @media (max-width: 480px) {
-  .container {
-    padding: 0 0.75rem;
-  }
-  
-  .section {
-    padding: 2rem 0;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-  }
-  
-  .card {
-    padding: 1.5rem;
-  }
-  
-  .btn {
-    padding: 0.75rem 1.25rem;
-    font-size: 0.9rem;
-  }
+  .container { padding: 0 0.75rem; }
+  .section { padding: 2rem 0; }
+  .section-title { font-size: 2rem; }
+  .card { padding: 1.5rem; }
+  .btn { padding: 0.75rem 1.25rem; font-size: 0.9rem; }
 }
-
 @media (max-width: 320px) {
-  .container {
-    padding: 0 0.5rem;
-  }
-  
-  .section-title {
-    font-size: 1.75rem;
-  }
-  
-  .card {
-    padding: 1rem;
-  }
+  .container { padding: 0 0.5rem; }
+  .section-title { font-size: 1.75rem; }
+  .card { padding: 1rem; }
 }
 
-/* Loading animation */
+/* ---------- Animations ---------- */
 .loading {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
 }
-
 @keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+  to { opacity: 1; }
 }
 
-/* Particle background effect */
+/* ---------- Particle Background ---------- */
 .particles {
   position: fixed;
   top: 0;
@@ -263,7 +239,6 @@ body {
   pointer-events: none;
   z-index: -1;
 }
-
 .particle {
   position: absolute;
   width: 2px;
@@ -272,14 +247,4 @@ body {
   border-radius: 50%;
   animation: float 6s ease-in-out infinite;
 }
-
-/* @keyframes float {
-  0%, 100% {
-    transform: translateY(0px) rotate(0deg);
-    opacity: 0.5;
-  }
-  50% {
-    transform: translateY(-20px) rotate(180deg);
-    opacity: 1;
-  }
-} */
+/* @keyframes float { … } */
