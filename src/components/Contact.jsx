@@ -129,10 +129,10 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/hegde-shashi/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-btn"
-                initial={{ opacity: 0, scale: 0 }}
-                animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
-                transition={{ duration: 0.8, delay: 0.7 }}
+                className="btn btn-primary"
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 0.8, delay: 1 }}
                 whileHover={{}}
                 whileTap={{}}
               >
@@ -141,13 +141,13 @@ const Contact = () => {
               </motion.a>
               
               <motion.a
-                href="https://github.com"
+                href="https://github.com/hegde-shashi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-btn"
-                initial={{ opacity: 0, scale: 0 }}
-                animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
+                className="btn btn-primary"
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 0.8, delay: 1 }}
                 whileHover={{}}
                 whileTap={{}}
               >

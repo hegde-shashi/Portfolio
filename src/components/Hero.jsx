@@ -125,7 +125,7 @@ const Hero = () => {
                 <FaLinkedin />
               </motion.a>
               <motion.a
-                href="https://github.com"
+                href="https://github.com/hegde-shashi"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="social-link"

@@ -456,7 +456,7 @@
 .social-btn:hover {
   background: #1d4ed8;
   transform: scale(1);
-  box-shadow: 0 5px 15px rgba(29, 78, 216, 0.3);
+  box-shadow: 0 5px 15px rgb(29, 79, 216);
 }
 
 .contact-form {
