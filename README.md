@@ -17,7 +17,7 @@ Welcome to my personal portfolio website! This project is a modern and sleek sin
 
 This portfolio is built with a modern tech stack:
 
-*   **Frontend**: [React](https://reactjs.org/), [Vite](https://vitejs.dev/)
+*   **Frontend**: [React](https://reactjs.org/), [Create React App](https://create-react-app.dev/)
 *   **Styling**: CSS3, Responsive Design
 *   **Animations**: [Framer Motion](https://www.framer.com/motion/)
 *   **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
@@ -44,9 +44,9 @@ To run this project locally, follow these steps:
 
 4.  **Start the development server:**
     ```bash
-    npm run dev
+    npm start
     ```
-    The application will be available at `http://localhost:5173`.
+    The application will be available at `http://localhost:3000`.
 
 ## 📬 Let's Connect!
 
@@ -94,7 +94,7 @@ This portfolio can be deployed to any static hosting service:
 - **GitHub Pages**
 - **Firebase Hosting**
 
-Simply run `npm run build` and upload the `dist` folder to your hosting service.
+Simply run `npm run build` and upload the `build` folder to your hosting service.
 
 ---
 

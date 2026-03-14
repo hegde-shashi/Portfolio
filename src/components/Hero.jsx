@@ -1,34 +1,34 @@
-import React, { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
-import profileImage from '../assets/Shashidhar_Hegde.jpg'
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import profileImage from "../assets/Shashidhar_Hegde.jpg";
 
 const Hero = () => {
-  const [text, setText] = useState('')
-  const fullText = "Data Scientist & AI Engineer"
-  const [isTyping, setIsTyping] = useState(true)
+  const [text, setText] = useState("");
+  const fullText = "Data Scientist & AI Engineer";
+  const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
-    let index = 0
+    let index = 0;
     const timer = setInterval(() => {
       if (index < fullText.length) {
-        setText(fullText.slice(0, index + 1))
-        index++
+        setText(fullText.slice(0, index + 1));
+        index++;
       } else {
-        setIsTyping(false)
-        clearInterval(timer)
+        setIsTyping(false);
+        clearInterval(timer);
       }
-    }, 100)
+    }, 100);
 
-    return () => clearInterval(timer)
-  }, [])
+    return () => clearInterval(timer);
+  }, []);
 
   const scrollToSection = (href) => {
-    const element = document.querySelector(href)
+    const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <section id="home" className="hero">
@@ -40,16 +40,16 @@ const Hero = () => {
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 6}s`
+              animationDelay: `${Math.random() * 6}s`,
             }}
             animate={{
               y: [0, -20, 0],
-              opacity: [0.5, 1, 0.5]
+              opacity: [0.5, 1, 0.5],
             }}
             transition={{
               duration: 6,
               repeat: Infinity,
-              delay: Math.random() * 6
+              delay: Math.random() * 6,
             }}
           />
         ))}
@@ -64,9 +64,9 @@ const Hero = () => {
             className="hero-text"
           >
             <h1 className="hero-title">
-              Hi, I'm <span className="gradient-text">Shashi Hegde</span>
+              Hi, I'm <span className="gradient-text">Shashidhar Hegde</span>
             </h1>
-            
+
             <motion.h2
               className="hero-subtitle"
               initial={{ opacity: 0 }}
@@ -83,9 +83,10 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.5 }}
             >
-              Detail-oriented software engineer transitioning into AI and Data Science. 
-              Currently pursuing M.Tech in AI & Data Science at PES University, 
-              passionate about leveraging data to solve complex problems.
+              Detail-oriented software engineer with a growing focus on AI and
+              Data Science, currently pursuing an M.Tech in AI & Data Science at
+              PES University and passionate about using data to solve complex
+              problems.
             </motion.p>
 
             <motion.div
@@ -96,13 +97,13 @@ const Hero = () => {
             >
               <button
                 className="btn btn-primary"
-                onClick={() => scrollToSection('#projects')}
+                onClick={() => scrollToSection("#projects")}
               >
                 View My Work
               </button>
               <button
                 className="btn btn-secondary"
-                onClick={() => scrollToSection('#contact')}
+                onClick={() => scrollToSection("#contact")}
               >
                 Get In Touch
               </button>
@@ -153,15 +154,15 @@ const Hero = () => {
           >
             <div className="profile-card card glow">
               <div className="profile-image-container">
-                <img 
-                  src={profileImage} 
-                  alt="Shashi Hegde" 
+                <img
+                  src={profileImage}
+                  alt="Shashi Hegde"
                   className="profile-image"
                 />
                 <div className="profile-image-overlay"></div>
               </div>
               <div className="profile-info">
-                <h3>Shashi Hegde</h3>
+                <h3>Shashidhar Hegde</h3>
                 <p>M.Tech AI & Data Science</p>
                 <p>PES University</p>
               </div>
@@ -170,7 +171,7 @@ const Hero = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

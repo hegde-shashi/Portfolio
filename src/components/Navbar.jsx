@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
+const SECTION_IDS = ['home', 'about', 'skills', 'projects', 'contact']
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -10,22 +12,57 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50)
-      
-      // Update active section based on scroll position
-      const sections = ['home', 'about', 'skills', 'projects', 'contact']
-      const scrollPosition = window.scrollY + 100
-
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const section = document.getElementById(sections[i])
-        if (section && section.offsetTop <= scrollPosition) {
-          setActiveSection(sections[i])
-          break
-        }
-      }
     }
 
+    handleScroll()
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useEffect(() => {
+    const sections = SECTION_IDS
+      .map((sectionId) => document.getElementById(sectionId))
+      .filter(Boolean)
+
+    if (sections.length === 0) {
+      return undefined
+    }
+
+    const visibleSections = new Map()
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            visibleSections.set(entry.target.id, entry.intersectionRatio)
+          } else {
+            visibleSections.delete(entry.target.id)
+          }
+        })
+
+        let nextActiveSection = 'home'
+        let maxRatio = 0
+
+        SECTION_IDS.forEach((sectionId) => {
+          const ratio = visibleSections.get(sectionId) ?? 0
+          if (ratio >= maxRatio) {
+            maxRatio = ratio
+            nextActiveSection = sectionId
+          }
+        })
+
+        setActiveSection(nextActiveSection)
+      },
+      {
+        root: null,
+        rootMargin: '-80px 0px -45% 0px',
+        threshold: [0.1, 0.2, 0.35, 0.5, 0.65]
+      }
+    )
+
+    sections.forEach((section) => observer.observe(section))
+
+    return () => observer.disconnect()
   }, [])
 
   const navItems = [
@@ -39,6 +76,7 @@ const Navbar = () => {
   const scrollToSection = (href) => {
     const element = document.querySelector(href)
     if (element) {
+      setActiveSection(href.slice(1))
       element.scrollIntoView({ behavior: 'smooth' })
     }
     setIsOpen(false)

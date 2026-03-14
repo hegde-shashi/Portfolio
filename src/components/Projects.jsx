@@ -10,28 +10,25 @@ const Projects = () => {
 
   const projects = [
     {
-      icon: <FaChartLine />,
-      title: "Predictive Analytics Dashboard",
-      description: "Built an interactive dashboard using Tableau and Python to predict customer behavior and sales trends. Implemented machine learning models for forecasting.",
-      tech: ["Python", "Tableau", "Scikit-learn"],
-      github: "#",
-      demo: "#"
+      icon: <FaBrain />,
+      title: "Generative AI - Maarga ",
+      description: "Built Maarga, an AI resume analyzer using RAG, LangChain, and LangGraph for real-time resume-JD matching and feedback.",
+      tech: ["Python", "LangChain", "RAG"],
+      github: "https://github.com/hegde-shashi/Maarga",
     },
     {
       icon: <FaDatabase />,
-      title: "Data Pipeline & ETL System",
-      description: "Developed a comprehensive ETL pipeline for processing large datasets, including data cleaning, transformation, and loading into data warehouses.",
-      tech: ["Python", "SQL", "Pandas"],
-      github: "#",
-      demo: "#"
+      title: "Medical ChatBot ",
+      description: "Built a Medical Bot using LLM workflows, RAG, and vector search to deliver accurate responses to healthcare-related queries.",
+      tech: ["Python", "LangChain", "RAG"],
+      github: "https://github.com/hegde-shashi/Medical_ChatBot",
     },
     {
-      icon: <FaBrain />,
-      title: "Machine Learning Model Suite",
+      icon: <FaChartLine />,
+      title: "Machine Learning",
       description: "Created multiple ML models for classification and regression tasks, including feature engineering, model selection, and performance evaluation.",
-      tech: ["Scikit-learn", "NumPy", "Matplotlib"],
-      github: "#",
-      demo: "#"
+      tech: ["Scikit-learn", "Pandas", "Numpy"],
+      github: "https://github.com/hegde-shashi",
     }
   ]
 
@@ -92,18 +89,10 @@ const Projects = () => {
                     className="project-link"
                     whileHover={{}}
                     whileTap={{}}
+                    target='_blank'
                   >
                     <FaGithub />
-                    Code
-                  </motion.a>
-                  <motion.a
-                    href={project.demo}
-                    className="project-link"
-                    whileHover={{}}
-                    whileTap={{}}
-                  >
-                    <FaExternalLinkAlt />
-                    Live Demo
+                    Link
                   </motion.a>
                 </div>
               </div>

@@ -12,27 +12,27 @@ const Skills = () => {
     {
       icon: <FaCode />,
       title: "Programming Languages",
-      skills: ["Python", "SQL", "R", "JavaScript"]
-    },
-    {
-      icon: <FaChartLine />,
-      title: "Data Science",
-      skills: ["Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn"]
+      skills: ["Python", "SQL", "Bash"]
     },
     {
       icon: <FaBrain />,
       title: "Machine Learning",
-      skills: ["Linear Regression", "Statistical Inference", "Predictive Modeling", "EDA"]
+      skills: ["Scikit-learn", "XGBoost", "TensorFlow", "Keras", "Time Series Analysis", "Feature Engineering", "Model Evaluation"]
+    },
+    {
+      icon: <FaChartLine />,
+      title: "Data and Analytics",
+      skills: ["Pandas", "NumPy", "statmodels", "SciPy", "A/B Testing", "Predictive Modeling", "ETL Processes"]
     },
     {
       icon: <FaChartBar />,
-      title: "Visualization",
-      skills: ["Tableau", "Power BI", "Plotly", "Dashboards"]
+      title: "Generative AI and LLMs",
+      skills: ["RAG", "LangChain", "LangGraph", "Vector Search", "LLM Workflows", "Prompt Engineering"]
     },
     {
       icon: <FaDatabase />,
-      title: "Data Management",
-      skills: ["SQL Databases", "Data Cleaning", "ETL Processes", "Data Warehousing"]
+      title: "Tools and Platforms",
+      skills: ["AWS", "Azure", "Flask", "Tableau", "Git", "CI/CD", "Docker", "Jupyter Notebooks", "VS Code"]
     },
     {
       icon: <FaCalculator />,

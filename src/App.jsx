@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion'
 import './App.css'
 import './components/components.css'
 import './responsive.css'

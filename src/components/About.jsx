@@ -1,17 +1,17 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
-import { useRef } from 'react'
+import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 
 const About = () => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   const stats = [
-    { number: '3+', label: 'Years Experience' },
-    { number: 'M.Tech', label: 'AI & Data Science' },
-    { number: '10+', label: 'Projects Completed' }
-  ]
+    { number: "3+", label: "Years Experience" },
+    { number: "M.Tech", label: "AI & Data Science" },
+    { number: "10+", label: "Projects Completed" },
+  ];
 
   return (
     <section id="about" className="section">
@@ -37,9 +37,12 @@ const About = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              I'm a detail-oriented software engineer with 3 years of experience in software quality and testing, 
-              now transitioning into AI and Data Science. Currently pursuing an M.Tech in AI & Data Science at PES University, 
-              where I focus on predictive modeling, statistical analysis, and data visualization.
+              Detail-oriented software engineer with 3 years of experience in
+              software development, automation, and testing, currently building
+              expertise in AI, Data Science, and Machine Learning. Pursuing an
+              M.Tech in AI & Data Science at PES University, with hands-on
+              experience in Python, SQL, Pandas, NumPy, Scikit-learn, Tableau,
+              and data-driven application development.
             </motion.p>
 
             <motion.p
@@ -47,10 +50,13 @@ const About = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              Proficient in Python, SQL, Pandas, NumPy, Scikit-learn, and Tableau, with a solid foundation in 
-              Linear Regression, Statistical Inference, and Applied Mathematics. Experienced in building projects 
-              involving machine learning models, exploratory data analysis (EDA), and interactive dashboards 
-              to deliver business insights.
+              Built projects in resume analysis, medical query assistance,
+              machine learning, exploratory data analysis, and dashboarding,
+              with practical exposure to RAG, LLM workflows, LangChain,
+              LangGraph, and vector search. Strong foundation in statistics,
+              predictive modeling, data analysis, and problem-solving, with
+              experience delivering automation and analytical solutions in
+              professional environments.
             </motion.p>
 
             <motion.p
@@ -58,9 +64,10 @@ const About = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              Passionate about leveraging data to solve complex problems and drive decision-making. 
-              Actively seeking opportunities as a Data Analyst, Junior Data Scientist, or Entry-Level 
-              Machine Learning Engineer to contribute to impactful, data-driven solutions.
+              Passionate about applying AI and data science to solve real-world
+              problems and generate meaningful business impact. Actively seeking
+              opportunities as a Data Scientist, AI/ML Engineer, or Machine
+              Learning Engineer.
             </motion.p>
           </motion.div>
 
@@ -75,9 +82,14 @@ const About = () => {
                 key={stat.label}
                 className="stat-item card"
                 initial={{ opacity: 0, y: 30 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                animate={
+                  isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }
+                }
                 transition={{ duration: 0.05, delay: 0.05 + index * 0.2 }}
-                whileHover={{ scale: 1.05, boxShadow: "0 10px 30px rgba(0, 0, 0, 0.2)" }}
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0 10px 30px rgba(0, 0, 0, 0.2)",
+                }}
               >
                 <motion.h3
                   className="gradient-text"
@@ -94,7 +106,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
