@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.923d3350.css",
-    "main.js": "/Portfolio/static/js/main.20cb6746.js",
-    "static/media/Shashidhar_Hegde.jpg": "/Portfolio/static/media/Shashidhar_Hegde.bb71c721594667ab9861.jpg",
-    "index.html": "/Portfolio/index.html",
-    "main.923d3350.css.map": "/Portfolio/static/css/main.923d3350.css.map",
-    "main.20cb6746.js.map": "/Portfolio/static/js/main.20cb6746.js.map"
+    "main.css": "/static/css/main.923d3350.css",
+    "main.js": "/static/js/main.e838b0c0.js",
+    "static/media/Shashidhar_Hegde.jpg": "/static/media/Shashidhar_Hegde.bb71c721594667ab9861.jpg",
+    "index.html": "/index.html",
+    "main.923d3350.css.map": "/static/css/main.923d3350.css.map",
+    "main.e838b0c0.js.map": "/static/js/main.e838b0c0.js.map"
   },
   "entrypoints": [
     "static/css/main.923d3350.css",
-    "static/js/main.20cb6746.js"
+    "static/js/main.e838b0c0.js"
   ]
 }
