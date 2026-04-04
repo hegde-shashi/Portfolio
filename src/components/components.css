@@ -390,7 +390,7 @@
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   background: rgba(255, 255, 255, 0.06);
-  color: #ffffff;
+  color: var(--text-color);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -414,18 +414,25 @@
 }
 
 .projects-nav:disabled {
-  opacity: 0.45;
   cursor: default;
   transform: none;
   border-color: rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.03);
-  color: #71717a;
+  color: #a1a1aa;
 }
 
 .projects-nav:disabled:hover {
   transform: none;
   border-color: rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.03);
+}
+
+:root[data-theme='light'] .projects-nav:disabled {
+  color: #94a3b8;
+}
+
+.projects-nav:disabled svg {
+  opacity: 0.55;
 }
 
 .projects-nav svg {
@@ -617,6 +624,22 @@
   font-size: 1.75rem;
   color: var(--text-color);
   margin: 0;
+}
+
+.project-modal-title-separator {
+  color: var(--text-subtle);
+}
+
+.project-modal-title-link {
+  color: var(--accent);
+  font-size: 0.72em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-modal-title-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
 }
 
 .project-modal-close {

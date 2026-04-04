@@ -21,12 +21,33 @@
     "details": "## Overview\nThis chatbot helps answer healthcare-related questions using retrieval and language models.\n\n## What it includes\n- LLM workflow orchestration\n- Vector search for context retrieval\n- Response generation with grounded sources\n\n## Notes\nYou can expand the knowledge base with additional medical documents or domain-specific sources.\n\n## Repository\n- [Open the source code](https://github.com/hegde-shashi/Medical_ChatBot)"
   },
   {
-    "id": "machine-learning",
-    "name": "Machine Learning",
-    "description": "Created multiple ML models for classification and regression tasks, including feature engineering, model selection, and performance evaluation.",
+    "id": "house_price_prediction",
+    "name": "House Price Prediction",
+    "description": "Analyzed a dataset of house features and prices to build a regression model that predicts house prices based on various attributes.",
     "tools": ["Scikit-learn", "Pandas", "NumPy"],
     "icon": "chart",
-    "github": "https://github.com/hegde-shashi",
+    "readmeUrl": "https://github.com/hegde-shashi/House_Price_Prediction/blob/main/README.md",
+    "github": "https://github.com/hegde-shashi/House_Price_Prediction",
+    "details": "## Overview\nA collection of machine learning work covering both classification and regression problems.\n\n## What it includes\n- Feature engineering and data preparation\n- Model selection and comparison\n- Performance evaluation and iteration\n\n## Good follow-up additions\n- Add charts for metrics\n- Add a model comparison table\n- Include notebooks or demo datasets\n\n## Repository\n- [Open the profile repository](https://github.com/hegde-shashi)"
+  },
+  {
+    "id": "road_accident_analysis",
+    "name": "Road Accident (Kaggle)",
+    "description": "Analyzed road accident data to identify patterns and factors contributing to accidents, and built a regression model to predict accident severity.",
+    "tools": ["Pandas", "NumPy", "Matplotlib"],
+    "icon": "brain",
+    "readmeUrl": "https://github.com/hegde-shashi/Road-Accident/blob/main/README.md",
+    "github": "https://github.com/hegde-shashi/Road-Accident",
+    "details": "## Overview\nA collection of machine learning work covering both classification and regression problems.\n\n## What it includes\n- Feature engineering and data preparation\n- Model selection and comparison\n- Performance evaluation and iteration\n\n## Good follow-up additions\n- Add charts for metrics\n- Add a model comparison table\n- Include notebooks or demo datasets\n\n## Repository\n- [Open the profile repository](https://github.com/hegde-shashi)"
+  },
+  {
+    "id": "employee_attrition",
+    "name": "Employee Attrition",
+    "description": "Built a model to predict employee attrition based on various factors such as job satisfaction, work environment, and personal attributes.",
+    "tools": ["Pandas", "NumPy", "Matplotlib"],
+    "icon": "star",
+    "readmeUrl": "https://github.com/hegde-shashi/Employee_Attrition/blob/main/README.md",
+    "github": "https://github.com/hegde-shashi/Employee_Attrition",
     "details": "## Overview\nA collection of machine learning work covering both classification and regression problems.\n\n## What it includes\n- Feature engineering and data preparation\n- Model selection and comparison\n- Performance evaluation and iteration\n\n## Good follow-up additions\n- Add charts for metrics\n- Add a model comparison table\n- Include notebooks or demo datasets\n\n## Repository\n- [Open the profile repository](https://github.com/hegde-shashi)"
   }
 ]

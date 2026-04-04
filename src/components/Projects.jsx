@@ -13,6 +13,9 @@ import {
   FaImage,
   FaChevronLeft,
   FaChevronRight,
+  FaAddressBook,
+  FaRocket,
+  FaStar
 } from 'react-icons/fa'
 import projects from '../data/projects.json'
 
@@ -22,6 +25,9 @@ const iconMap = {
   chart: FaChartLine,
   code: FaCode,
   image: FaImage,
+  addressBook: FaAddressBook,
+  rocket: FaRocket,
+  star: FaStar
 }
 
 const resolveImageSource = (image) => {
@@ -472,7 +478,22 @@ const Projects = () => {
             <div className="project-modal-header">
               <div>
                 <p className="project-modal-eyebrow">Project details</p>
-                <h3 id="project-modal-title">{selectedProject.name}</h3>
+                <h3 id="project-modal-title">
+                  {selectedProject.name}
+                  {selectedProject.github ? (
+                    <>
+                      <span className="project-modal-title-separator" aria-hidden="true"> | </span>
+                      <a
+                        className="project-modal-title-link"
+                        href={selectedProject.github}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Link
+                      </a>
+                    </>
+                  ) : null}
+                </h3>
               </div>
 
               <button
