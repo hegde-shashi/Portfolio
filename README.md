@@ -89,7 +89,7 @@ The website is fully responsive and optimized for:
 
 This portfolio can be deployed to any static hosting service:
 
-- **Vercel** (recommended for React apps)
+- **Vercel** 
 - **Netlify**
 - **GitHub Pages**
 - **Firebase Hosting**
