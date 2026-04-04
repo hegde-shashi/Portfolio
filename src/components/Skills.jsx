@@ -48,7 +48,7 @@ const Skills = () => {
           className="section-title"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.3 }}
         >
           Skills & Technologies
         </motion.h2>
@@ -57,7 +57,7 @@ const Skills = () => {
           {skillCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.title}
-              className="skill-category card"
+              className="skill-category"
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.05, delay: 0.05 + categoryIndex * 0.2 }}

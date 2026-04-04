@@ -3,10 +3,46 @@
   --bg-color: #0a0a0a;
   --bg-color2: #1a1a1a;
   --text-color: #ffffff;
+  --text-muted: #a1a1aa;
+  --text-subtle: #71717a;
   --accent: #3b82f6;
   --accent2: #8b5cf6;
   --accent-hover: #1d4ed8;
   --max-width: 1200px;
+  --surface-bg: rgba(255, 255, 255, 0.05);
+  --surface-bg-strong: rgba(255, 255, 255, 0.1);
+  --surface-border: rgba(255, 255, 255, 0.1);
+  --surface-border-strong: rgba(255, 255, 255, 0.2);
+  --navbar-bg: rgba(10, 10, 10, 0.9);
+  --navbar-bg-scrolled: rgba(10, 10, 10, 0.95);
+  --navbar-border: rgba(255, 255, 255, 0.1);
+  --footer-bg: rgba(0, 0, 0, 0.8);
+  --modal-overlay: rgba(3, 7, 18, 0.88);
+  --modal-surface-strong: rgba(10, 14, 24, 0.98);
+  --modal-surface: rgba(8, 11, 19, 0.985);
+  --shadow-elevated: rgba(0, 0, 0, 0.35);
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg-color: #f4f8ff;
+  --bg-color2: #e8efff;
+  --text-color: #0f172a;
+  --text-muted: #334155;
+  --text-subtle: #475569;
+  --surface-bg: rgba(255, 255, 255, 0.86);
+  --surface-bg-strong: rgba(255, 255, 255, 0.95);
+  --surface-border: rgba(37, 99, 235, 0.18);
+  --surface-border-strong: rgba(37, 99, 235, 0.3);
+  --navbar-bg: rgba(248, 250, 255, 0.92);
+  --navbar-bg-scrolled: rgba(248, 250, 255, 0.98);
+  --navbar-border: rgba(15, 23, 42, 0.12);
+  --footer-bg: rgba(241, 245, 255, 0.95);
+  --modal-overlay: rgba(15, 23, 42, 0.5);
+  --modal-surface-strong: rgba(255, 255, 255, 0.985);
+  --modal-surface: rgba(252, 254, 255, 0.99);
+  --shadow-elevated: rgba(15, 23, 42, 0.18);
+  color-scheme: light;
 }
 
 * {

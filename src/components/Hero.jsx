@@ -60,7 +60,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.3, delay: 0.06 }}
             className="hero-text"
           >
             <h1 className="hero-title">
@@ -71,7 +71,7 @@ const Hero = () => {
               className="hero-subtitle"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, delay: 1 }}
+              transition={{ duration: 0.25, delay: 0.3 }}
             >
               {text}
               {isTyping && <span className="cursor">|</span>}
@@ -81,7 +81,7 @@ const Hero = () => {
               className="hero-description"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.5 }}
+              transition={{ duration: 0.3, delay: 0.12 }}
             >
               Detail-oriented software engineer with a growing focus on AI and
               Data Science, currently pursuing an M.Tech in AI & Data Science at
@@ -93,7 +93,7 @@ const Hero = () => {
               className="hero-buttons"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 2 }}
+              transition={{ duration: 0.3, delay: 0.18 }}
             >
               <button
                 className="btn btn-primary"
@@ -113,7 +113,7 @@ const Hero = () => {
               className="hero-social"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 2.5 }}
+              transition={{ duration: 0.3, delay: 0.06 }}
             >
               <motion.a
                 href="https://www.linkedin.com/in/hegde-shashi/"
@@ -150,7 +150,7 @@ const Hero = () => {
             className="hero-image"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
+            transition={{ duration: 0.3, delay: 0.15 }}
           >
             <div className="profile-card card glow">
               <div className="profile-image-container">

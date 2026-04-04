@@ -1,0 +1,32 @@
+[
+  {
+    "id": "maarga",
+    "name": "Generative AI - Maarga",
+    "description": "Built Maarga, an AI resume analyzer using RAG, LangChain, and LangGraph for real-time resume-JD matching and feedback.",
+    "tools": ["Python", "LangChain", "RAG"],
+    "icon": "brain",
+    "github": "https://github.com/hegde-shashi/Maarga",
+        "image": "assets/project-1/front_page_icon.png",
+    "readmeUrl": "https://github.com/hegde-shashi/Maarga/blob/main/README.md",
+    "details": "## Overview\nMaarga compares resumes against job descriptions and gives practical feedback for better alignment.\n\n## What it includes\n- Resume and JD analysis\n- Retrieval-augmented generation for matching\n- Actionable suggestions for improvement\n\n## Tech notes\nThe project uses LangChain, LangGraph, and vector-backed retrieval to keep the response grounded in the input documents.\n\n## Repository\n- [Open the source code](https://github.com/hegde-shashi/Maarga)"
+  },
+  {
+    "id": "medical-chatbot",
+    "name": "Medical ChatBot",
+    "description": "Built a Medical Bot using LLM workflows, RAG, and vector search to deliver accurate responses to healthcare-related queries.",
+    "tools": ["Python", "LangChain", "RAG"],
+    "icon": "database",
+    "github": "https://github.com/hegde-shashi/Medical_ChatBot",
+    "readmeUrl": "https://github.com/hegde-shashi/Medical_ChatBot/blob/main/README.md",
+    "details": "## Overview\nThis chatbot helps answer healthcare-related questions using retrieval and language models.\n\n## What it includes\n- LLM workflow orchestration\n- Vector search for context retrieval\n- Response generation with grounded sources\n\n## Notes\nYou can expand the knowledge base with additional medical documents or domain-specific sources.\n\n## Repository\n- [Open the source code](https://github.com/hegde-shashi/Medical_ChatBot)"
+  },
+  {
+    "id": "machine-learning",
+    "name": "Machine Learning",
+    "description": "Created multiple ML models for classification and regression tasks, including feature engineering, model selection, and performance evaluation.",
+    "tools": ["Scikit-learn", "Pandas", "NumPy"],
+    "icon": "chart",
+    "github": "https://github.com/hegde-shashi",
+    "details": "## Overview\nA collection of machine learning work covering both classification and regression problems.\n\n## What it includes\n- Feature engineering and data preparation\n- Model selection and comparison\n- Performance evaluation and iteration\n\n## Good follow-up additions\n- Add charts for metrics\n- Add a model comparison table\n- Include notebooks or demo datasets\n\n## Repository\n- [Open the profile repository](https://github.com/hegde-shashi)"
+  }
+]

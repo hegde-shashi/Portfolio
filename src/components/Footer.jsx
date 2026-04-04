@@ -8,14 +8,14 @@ const Footer = () => {
       className="footer"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.3 }}
     >
       <div className="container">
         <div className="footer-content">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.3 }}
           >
             &copy; 2024 Shashi Hegde. All rights reserved.
           </motion.p>
@@ -24,7 +24,7 @@ const Footer = () => {
             className="footer-social"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.3, delay: 0.06 }}
           >
             <motion.a
               href="https://www.linkedin.com/in/hegde-shashi/"

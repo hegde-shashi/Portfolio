@@ -74,7 +74,7 @@ const Contact = () => {
           className="section-title"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.3 }}
         >
           Get In Touch
         </motion.h2>
@@ -84,7 +84,7 @@ const Contact = () => {
             className="contact-info"
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.3, delay: 0.06 }}
           >
             <h3>Let's Connect!</h3>
             <p>
@@ -97,7 +97,7 @@ const Contact = () => {
                 className="contact-item"
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
+                transition={{ duration: 0.3, delay: 0.12 }}
               >
                 <FaEnvelope />
                 <span>hegdeshashidhar123@gmail.com</span>
@@ -107,7 +107,7 @@ const Contact = () => {
                 className="contact-item"
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
+                transition={{ duration: 0.3, delay: 0.15 }}
               >
                 <FaMapMarkerAlt />
                 <span>Bangalore, India</span>
@@ -117,7 +117,7 @@ const Contact = () => {
                 className="contact-item"
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
+                transition={{ duration: 0.3, delay: 0.18 }}
               >
                 <FaGraduationCap />
                 <span>PES University</span>
@@ -132,7 +132,7 @@ const Contact = () => {
                 className="btn btn-primary"
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.8, delay: 1 }}
+                transition={{ duration: 0.3, delay: 0.3 }}
                 whileHover={{}}
                 whileTap={{}}
               >
@@ -147,7 +147,7 @@ const Contact = () => {
                 className="btn btn-primary"
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.8, delay: 1 }}
+                transition={{ duration: 0.3, delay: 0.3 }}
                 whileHover={{}}
                 whileTap={{}}
               >
@@ -161,14 +161,14 @@ const Contact = () => {
             className="contact-form"
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.3, delay: 0.12 }}
           >
             <form onSubmit={handleSubmit}>
               <motion.div
                 className="form-group"
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
+                transition={{ duration: 0.3, delay: 0.18 }}
               >
                 <input
                   type="text"
@@ -184,7 +184,7 @@ const Contact = () => {
                 className="form-group"
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.8, delay: 0.7 }}
+                transition={{ duration: 0.3, delay: 0.11 }}
               >
                 <input
                   type="email"
@@ -200,7 +200,7 @@ const Contact = () => {
                 className="form-group"
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
+                transition={{ duration: 0.3, delay: 0.14 }}
               >
                 <input
                   type="text"
@@ -216,7 +216,7 @@ const Contact = () => {
                 className="form-group"
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.8, delay: 0.9 }}
+                transition={{ duration: 0.3, delay: 0.17 }}
               >
                 <textarea
                   name="message"
@@ -248,7 +248,7 @@ const Contact = () => {
                 disabled={isSubmitting}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{ duration: 0.8, delay: 1 }}
+                transition={{ duration: 0.3, delay: 0.3 }}
                 whileHover={{}}
                 whileTap={{}}
               >

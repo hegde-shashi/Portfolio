@@ -20,7 +20,7 @@ const About = () => {
           className="section-title"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.3 }}
         >
           About Me
         </motion.h2>
@@ -30,12 +30,12 @@ const About = () => {
             className="about-text"
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.3, delay: 0.06 }}
           >
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
+              transition={{ duration: 0.3, delay: 0.12 }}
             >
               Detail-oriented software engineer with 3 years of experience in
               software development, automation, and testing, currently building
@@ -48,7 +48,7 @@ const About = () => {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
+              transition={{ duration: 0.3, delay: 0.18 }}
             >
               Built projects in resume analysis, medical query assistance,
               machine learning, exploratory data analysis, and dashboarding,
@@ -62,7 +62,7 @@ const About = () => {
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
+              transition={{ duration: 0.3, delay: 0.14 }}
             >
               Passionate about applying AI and data science to solve real-world
               problems and generate meaningful business impact. Actively seeking
@@ -75,7 +75,7 @@ const About = () => {
             className="about-stats"
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.3, delay: 0.12 }}
           >
             {stats.map((stat, index) => (
               <motion.div
@@ -95,7 +95,7 @@ const About = () => {
                   className="gradient-text"
                   initial={{ scale: 0 }}
                   animate={isInView ? { scale: 1 } : { scale: 0 }}
-                  transition={{ duration: 0.2, delay: 0.8 + index * 0.2 }}
+                  transition={{ duration: 0.2, delay: 0.14 + index * 0.2 }}
                 >
                   {stat.number}
                 </motion.h3>

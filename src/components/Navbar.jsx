@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import { FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa'
 
 const SECTION_IDS = ['home', 'about', 'skills', 'projects', 'contact']
 
-const Navbar = () => {
+const Navbar = ({ theme, onThemeToggle }) => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState('home')
@@ -87,7 +87,7 @@ const Navbar = () => {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.25 }}
       className={`navbar ${scrolled ? 'scrolled' : ''}`}
     >
       <div className="navContainer">
@@ -121,13 +121,26 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <motion.div
-          className="hamburger"
-          onClick={() => setIsOpen(!isOpen)}
-          whileTap={{ scale: 0.95 }}
-        >
-          {isOpen ? <FaTimes /> : <FaBars />}
-        </motion.div>
+        <div className="nav-actions">
+          <motion.button
+            type="button"
+            className="nav-theme-toggle"
+            onClick={onThemeToggle}
+            aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
+            title={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'}
+            whileTap={{ scale: 0.94 }}
+          >
+            {theme === 'dark' ? <FaSun /> : <FaMoon />}
+          </motion.button>
+
+          <motion.div
+            className="hamburger"
+            onClick={() => setIsOpen(!isOpen)}
+            whileTap={{ scale: 0.95 }}
+          >
+            {isOpen ? <FaTimes /> : <FaBars />}
+          </motion.div>
+        </div>
       </div>
     </motion.nav>
     </div>
