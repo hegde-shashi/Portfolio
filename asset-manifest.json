@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.046c4352.css",
-    "main.js": "/static/js/main.2ac6129b.js",
+    "main.js": "/static/js/main.38ac0070.js",
     "static/media/Shashidhar_Hegde.jpg": "/static/media/Shashidhar_Hegde.bb71c721594667ab9861.jpg",
     "index.html": "/index.html",
     "main.046c4352.css.map": "/static/css/main.046c4352.css.map",
-    "main.2ac6129b.js.map": "/static/js/main.2ac6129b.js.map"
+    "main.38ac0070.js.map": "/static/js/main.38ac0070.js.map"
   },
   "entrypoints": [
     "static/css/main.046c4352.css",
-    "static/js/main.2ac6129b.js"
+    "static/js/main.38ac0070.js"
   ]
 }
