@@ -17,7 +17,7 @@ const Footer = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
           >
-            &copy; 2024 Shashi Hegde. All rights reserved.
+            &copy; 2026 Shashi Hegde. All rights reserved.
           </motion.p>
           
           <motion.div

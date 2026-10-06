@@ -83,10 +83,12 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: 0.12 }}
             >
-              Detail-oriented software engineer with a growing focus on AI and
-              Data Science, currently pursuing an M.Tech in AI & Data Science at
-              PES University and passionate about using data to solve complex
-              problems.
+              Detail-oriented AI Engineer with 4 years of software engineering
+              experience, focused on Generative AI, machine learning, and
+              intelligent application development. Currently pursuing an M.Tech
+              in Artificial Intelligence & Data Science at PES University, with
+              hands-on experience building RAG pipelines, multi-agent systems,
+              NLP solutions, and AI-driven applications.
             </motion.p>
 
             <motion.div

@@ -37,12 +37,13 @@ const About = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.3, delay: 0.12 }}
             >
-              Detail-oriented software engineer with 3 years of experience in
-              software development, automation, and testing, currently building
-              expertise in AI, Data Science, and Machine Learning. Pursuing an
-              M.Tech in AI & Data Science at PES University, with hands-on
-              experience in Python, SQL, Pandas, NumPy, Scikit-learn, Tableau,
-              and data-driven application development.
+              I am an AI Engineer with 4 years of software engineering
+              experience focused on building Generative AI, NLP, and intelligent
+              application solutions. My professional experience includes
+              developing RAG-based systems, document intelligence workflows, and
+              multi-agent applications, with a strong interest in applying AI to
+              solve real-world business problems and improve information
+              retrieval and automation.
             </motion.p>
 
             <motion.p
@@ -50,13 +51,14 @@ const About = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.3, delay: 0.18 }}
             >
-              Built projects in resume analysis, medical query assistance,
-              machine learning, exploratory data analysis, and dashboarding,
-              with practical exposure to RAG, LLM workflows, LangChain,
-              LangGraph, and vector search. Strong foundation in statistics,
-              predictive modeling, data analysis, and problem-solving, with
-              experience delivering automation and analytical solutions in
-              professional environments.
+              Currently, I am pursuing an M.Tech in Artificial Intelligence &
+              Data Science at PES University, where I am strengthening my
+              knowledge in machine learning, deep learning, statistics, and AI
+              systems while working on practical projects involving real-world
+              datasets. I have hands-on experience with Python, SQL, Pandas,
+              NumPy, and scikit-learn, along with machine learning and deep
+              learning techniques including classification, regression,
+              clustering, CNNs, and model optimization.
             </motion.p>
 
             <motion.p
@@ -64,10 +66,14 @@ const About = () => {
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.3, delay: 0.14 }}
             >
-              Passionate about applying AI and data science to solve real-world
-              problems and generate meaningful business impact. Actively seeking
-              opportunities as a Data Scientist, AI/ML Engineer, or Machine
-              Learning Engineer.
+              Alongside traditional machine learning, I have been working
+              extensively with Generative AI technologies, including Large
+              Language Models (LLMs), Retrieval-Augmented Generation (RAG),
+              semantic search, prompt engineering, LangChain, LangGraph, Gemini,
+              and vector databases. I have built solutions involving policy
+              information retrieval, multi-agent chatbots, resume analysis, and
+              domain-specific AI applications, and enjoy transforming complex
+              requirements into practical, scalable AI-driven solutions.
             </motion.p>
           </motion.div>
 

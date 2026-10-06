@@ -15,7 +15,8 @@ import {
   FaChevronRight,
   FaAddressBook,
   FaRocket,
-  FaStar
+  FaStar,
+  FaLeaf
 } from 'react-icons/fa'
 import projects from '../data/projects.json'
 
@@ -27,7 +28,8 @@ const iconMap = {
   image: FaImage,
   addressBook: FaAddressBook,
   rocket: FaRocket,
-  star: FaStar
+  star: FaStar,
+  leaf: FaLeaf
 }
 
 const resolveImageSource = (image) => {

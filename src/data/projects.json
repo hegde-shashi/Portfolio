@@ -11,6 +11,16 @@
     "details": "## Overview\nMaarga compares resumes against job descriptions and gives practical feedback for better alignment.\n\n## What it includes\n- Resume and JD analysis\n- Retrieval-augmented generation for matching\n- Actionable suggestions for improvement\n\n## Tech notes\nThe project uses LangChain, LangGraph, and vector-backed retrieval to keep the response grounded in the input documents.\n\n## Repository\n- [Open the source code](https://github.com/hegde-shashi/Maarga)"
   },
   {
+    "id": "arecanut_classification",
+    "name": "Arecanut Classification",
+    "description": "Developed a machine learning model to classify arecanut leaves into healthy and diseased categories using image processing techniques.",
+    "tools": ["Python", "TensorFlow", "Scikit-learn"],
+    "icon": "leaf",
+    "github": "https://github.com/hegde-shashi/arecanut_proejct",
+    "readmeUrl": "https://github.com/hegde-shashi/arecanut_proejct/blob/main/README.md",
+    "details": "## Overview\nArecanut Classification uses image processing to distinguish between healthy and diseased arecanut leaves.\n\n## What it includes\n- Image preprocessing and feature extraction\n- Machine learning model for classification\n- Performance evaluation and visualization\n\n## Tech notes\nThe project leverages OpenCV for image processing and Scikit-learn for building the classification model.\n\n## Repository\n- [Open the source code](https://github.com/hegde-shashi/arecanut_proejct)"
+  },
+  {
     "id": "medical-chatbot",
     "name": "Medical ChatBot",
     "description": "Built a Medical Bot using LLM workflows, RAG, and vector search to deliver accurate responses to healthcare-related queries.",
